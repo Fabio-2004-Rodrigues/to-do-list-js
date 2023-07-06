@@ -1,0 +1,145 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Helvetica;
+    color: #333;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-image: url("../assets/nature.webp");
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 3rem auto 0;
+    max-width: 450px;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 20px;
+}
+
+.hide {
+    display: none;
+}
+
+button {
+    background-color: #fdfdfd;
+    color: green;
+    border: 2px solid green;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .3rem .6rem;
+    transition: .4s;
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: green;
+    color: #fff;
+}
+
+button:hover>i {
+    color: #fff;
+}
+
+button i {
+    color: green;
+    font-weight: bold;
+    pointer-events: none;
+}
+
+.container header {
+    text-align: center;
+    padding: 1rem 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: row;
+}
+
+h3 {
+    font-weight: bold;
+    font-size: 20px;
+    padding: .5rem 0;
+}
+
+.search-filter {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid #ccc;
+    padding: 1rem .5rem;
+}
+
+.todo {
+    border-bottom: 1px solid #ccc;
+    padding: 1rem .5rem;
+}
+
+.todo input {
+    width: 100%;
+}
+
+input,
+select {
+    padding: .5rem .5rem;
+    border-radius: 10px;
+}
+
+.search {
+    border-right: 1px solid #ddd;
+    padding: 0 1rem 0 0;
+    margin: 0 1rem 0 0;
+    width: 65%;
+
+}
+
+.search input {
+    width: 100%;
+}
+
+.form-control input {
+    margin-right: .5rem;
+}
+
+.filter {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+}
+
+.filter select {
+    flex: 1;
+}
+
+.todo-body {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem .5rem;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.todo-buttons {
+    display: flex;
+    gap: .5rem
+}
+
+.todo-body .todo-desc {
+    flex: 1;
+    font-size: 20px;
+}
+
+.done {
+    background-color: dimgrey;
+    font-style: italic;
+    text-decoration: line-through;
+}
